@@ -2,5 +2,11 @@
 file=$1
 cat $file
 tput cup 0 0
+x=0
+y=0
 read templine
-tput cup 0 0
+if [ $templine = ^[[A" ]; then
+ #x=x
+ #y=y-1
+ tput cup x y
+fi
