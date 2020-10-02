@@ -2,3 +2,4 @@
 file=$1
 cat $file
 tput cup 0 0
+read templine
