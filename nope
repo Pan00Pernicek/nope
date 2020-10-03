@@ -5,15 +5,17 @@ clear
 tput cup 0 0
 x=0
 y=0
-read templine
-if [ $templine = "^[[A" ]; then
- ((x=x+0))
- ((y=y-2))
- tput cup x y
-fi
-if [ $templine = "^[[B" ]; then
- ((x=x+0))
- ((y=y+1))
- tput cup x y
-fi
-nope
+while true
+do
+ read templine
+ if [ $templine = "^[[A" ]; then
+  ((x=x+0))
+  ((y=y-2))
+  tput cup x y
+ fi
+ if [ $templine = "^[[B" ]; then
+  ((x=x+0))
+  ((y=y+1))
+  tput cup x y
+ fi
+done
