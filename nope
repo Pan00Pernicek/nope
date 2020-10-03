@@ -8,13 +8,13 @@ y=0
 while true
 do
  read templine
- if [ $templine = "^[[A" ]; then
+ if [ $templine = "up" ]; then
   ((x=x+0))
   ((y=y-2))
   tput cup $x $y
   echo test
  fi
- if [ $templine = "^[[B" ]; then
+ if [ $templine = "down" ]; then
   ((x=x+0))
   ((y=y+1))
   tput cup $x $y
