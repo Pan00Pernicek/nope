@@ -16,7 +16,7 @@ do
  fi
  if [ $templine = "down" ]; then
   ((x=x+0))
-  ((y=y+1))
+  ((y=y+2))
   tput cup $x $y
   echo test2
  fi
