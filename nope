@@ -1,12 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 file=$1
+clear
 cat $file
 tput cup 0 0
 x=0
 y=0
 read templine
 if [ $templine = ^[[A" ]; then
- #x=x
- #y=y-1
+ ((x=x+0))
+ ((var=var-1))
  tput cup x y
 fi
