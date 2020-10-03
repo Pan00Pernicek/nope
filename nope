@@ -16,3 +16,4 @@ if [ $templine = "^[[B" ]; then
  ((y=y+1))
  tput cup x y
 fi
+nope
